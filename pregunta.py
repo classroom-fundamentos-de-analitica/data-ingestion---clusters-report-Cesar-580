@@ -103,11 +103,8 @@ def ingest_data():
         cluster.append(data)
         data = [0,0,0,'']
 
-    print(cluster)
-
     df = pd.DataFrame (cluster, columns = columnas)
 
-    print(df)
-    return 
+    return df
 
 ingest_data()
