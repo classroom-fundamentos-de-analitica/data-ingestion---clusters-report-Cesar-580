@@ -99,7 +99,7 @@ def ingest_data():
         data[0] = clusters[i]
         data[1] = cantidad_de_palabras_clave[i]
         data[2] = porcentaje_de_palabras_clave[i]
-        data[3] = totalString[i]
+        data[3] = totalString[i].strip()
         cluster.append(data)
         data = [0,0,0,'']
 
@@ -108,3 +108,4 @@ def ingest_data():
     return df
 
 ingest_data()
+
